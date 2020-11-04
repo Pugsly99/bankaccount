@@ -35,7 +35,7 @@ Expect: BankAccount(name, total){};
 
 Describe: BankAccount.prototype.withdrawl
 Test:   It will subtract from BankAccount.this.total
-Code:   this.total - deposit
+Code:   this.total - withdrawl
 Expect: BankAccout(total).toEqual(total-withdrawl)
 
 Describe: BankAccount.prototype.deposit

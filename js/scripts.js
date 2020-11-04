@@ -13,5 +13,9 @@ BankAccount.prototype.withdrawl = function(withdrawl) {
   return this.total= this.total - withdrawl;
 }
 
+BankAccount.prototype.deposit = function(deposit) {
+  return this.total= this.total + deposit;
+}
+
 
 //UI Logic
