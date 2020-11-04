@@ -1,9 +1,8 @@
+// Describe: BankAccount.prototype.deposit
+// Test:   It will add to BankAccount.this.total
+// Code:   this.total - desposit
+// Expect: BankAccount(total).toEqual(total-deposit)
 
-// Describe: BankAccount.prototype.withdrawl
-// Test:   It will subtract from BankAccount.this.total
-// Code:   this.total - withdrawl
-// Expect: BankAccout(total).toEqual(total-withdrawl)
-//business logic
 
 function BankAccount(name, total) {
   this.name = name;
@@ -13,5 +12,6 @@ function BankAccount(name, total) {
 BankAccount.prototype.withdrawl = function(withdrawl) {
   return this.total= this.total - withdrawl;
 }
+
 
 //UI Logic
