@@ -26,5 +26,6 @@ $(document).ready(function(){
   }); 
   $("form#money").submit(function(event){
     event.preventDefault();
+    
   });
 });
