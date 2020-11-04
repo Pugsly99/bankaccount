@@ -17,5 +17,14 @@ BankAccount.prototype.deposit = function(deposit) {
   return this.total= this.total + deposit;
 }
 
-
 //UI Logic
+$(document).ready(function(){
+  attachContactListeners();
+  $("form#register").submit(function(event){
+    event.preventDefault();
+  
+  }); 
+  $("form#money").submit(function(event){
+    event.preventDefault();
+  });
+});
