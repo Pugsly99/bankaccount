@@ -1,9 +1,8 @@
-// Describe: BankAccount()
-// Test:   It will create the framework to create objects containing name and initial deposit.
-// Code:   this.name = name;
-// Code:   this.total = total;
-// Expect: BankAccount(name, total){};
 
+// Describe: BankAccount.prototype.withdrawl
+// Test:   It will subtract from BankAccount.this.total
+// Code:   this.total - withdrawl
+// Expect: BankAccout(total).toEqual(total-withdrawl)
 //business logic
 
 function BankAccount(name, total) {
@@ -11,8 +10,8 @@ function BankAccount(name, total) {
   this.total = total;
 }
 
-
-
-
+BankAccount.prototype.withdrawl = function(withdrawl) {
+  return this.total= this.total - withdrawl;
+}
 
 //UI Logic
